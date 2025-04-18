@@ -1,0 +1,46 @@
+/* Card Styles */
+.job-card {
+  @apply bg-white rounded-xl shadow-lg transition-all duration-300;
+  transform: translateY(0);
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply px-6 py-2 rounded-lg bg-blue-600 text-white font-medium transition-all duration-300;
+  transform: translateY(0);
+}
+
+.btn-primary:hover {
+  @apply bg-blue-700;
+  transform: translateY(-1px);
+}
+
+/* Form Styles */
+.form-input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg transition-all duration-300;
+}
+
+.form-input:focus {
+  @apply border-blue-500 ring-2 ring-blue-200 outline-none;
+}
+
+/* Image Styles */
+.img-cover {
+  @apply object-cover w-full h-full;
+  aspect-ratio: 16/9;
+}
+
+/* Container Styles */
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Grid Layouts */
+.grid-responsive {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+}

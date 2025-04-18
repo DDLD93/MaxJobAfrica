@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Max Job Africa - Premier Multinational Recruitment Agency</title>
+    <meta name="title" content="Max Job Africa - Premier Multinational Recruitment Agency">
+    <meta name="description" content="Leading recruitment agency connecting African talent with global opportunities. Specializing in tech, healthcare, engineering, and finance sectors. Find your dream job in Nigeria, Saudi Arabia, and other international markets.">
+    <meta name="keywords" content="recruitment agency, job search, international jobs, career opportunities, Nigeria jobs, Saudi Arabia jobs, tech jobs, healthcare jobs, engineering jobs, finance jobs, African talent, global opportunities">
+    <meta name="author" content="Max Job Africa">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maxjobafrica.com/">
+    <meta property="og:title" content="Max Job Africa - Premier Multinational Recruitment Agency">
+    <meta property="og:description" content="Leading recruitment agency connecting African talent with global opportunities. Find your dream job today!">
+    <meta property="og:image" content="https://maxjobafrica.com/images/og-image.jpg">
+    <meta property="og:site_name" content="Max Job Africa">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://maxjobafrica.com/">
+    <meta name="twitter:title" content="Max Job Africa - Premier Multinational Recruitment Agency">
+    <meta name="twitter:description" content="Leading recruitment agency connecting African talent with global opportunities. Find your dream job today!">
+    <meta name="twitter:image" content="https://maxjobafrica.com/images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style">
+    <link rel="preload" href="styles/globals.css" as="style">
+    <link rel="preload" href="styles/navbar.css" as="style">
+    
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    
+    <!-- React and Babel -->
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js" defer></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js" defer></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js" defer></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    
+    <!-- Custom Styles -->
+    <link href="styles/globals.css" rel="stylesheet">
+    <link href="styles/animations.css" rel="stylesheet">
+    <link href="styles/responsive.css" rel="stylesheet">
+    <link href="styles/typography.css" rel="stylesheet">
+    <link href="styles/components.css" rel="stylesheet">
+    <link href="styles/seminar.css" rel="stylesheet">
+    <link href="styles/navbar.css" rel="stylesheet">
+    
+    <!-- Performance Optimizations -->
+    <script>
+        // Lazy load images
+        document.addEventListener("DOMContentLoaded", function() {
+            var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+            if ("IntersectionObserver" in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.classList.remove("lazy");
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            }
+        });
+
+        // Tailwind config
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navbar-dark': '#1a365d',
+                        'primary': '#1e40af',
+                        'primary-dark': '#1e3a8a'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Max Job Africa",
+        "url": "https://maxjobafrica.com",
+        "logo": "https://maxjobafrica.com/images/logo.png",
+        "description": "Leading recruitment agency connecting African talent with global opportunities.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Nigeria"
+        },
+        "sameAs": [
+            "https://facebook.com/maxjobafrica",
+            "https://twitter.com/maxjobafrica",
+            "https://linkedin.com/company/maxjobafrica"
+        ]
+    }
+    </script>
+</head>
+<body class="font-sans antialiased">
+    <div id="root"></div>
+    
+    <!-- Components -->
+    <script type="text/babel" src="components/Logo.js"></script>
+    <script type="text/babel" src="components/Navbar.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/CountryGuides.js"></script>
+    <script type="text/babel" src="components/SuccessStories.js"></script>
+    <script type="text/babel" src="components/BlogSection.js"></script>
+    <script type="text/babel" src="components/Services.js"></script>
+    <script type="text/babel" src="components/FAQ.js"></script>
+    <script type="text/babel" src="components/ContactForm.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/Testimonials.js"></script>
+    <script type="text/babel" src="components/AboutSection.js"></script>
+    <script type="text/babel" src="components/MembershipForm.js"></script>
+
+    <!-- Pages -->
+    <script type="text/babel" src="pages/HomePage.js"></script>
+    <script type="text/babel" src="pages/AboutPage.js"></script>
+    <script type="text/babel" src="pages/ServicesPage.js"></script>
+    <script type="text/babel" src="pages/ContactPage.js"></script>
+    <script type="text/babel" src="pages/SeminarRegistrationPage.js"></script>
+    <script type="text/babel" src="pages/NotFoundPage.js"></script>
+    <script type="text/babel" src="pages/MembershipPage.js"></script>
+    
+    <!-- Main App -->
+    <script type="text/babel" src="app.js"></script>
+    <script type="text/babel" src="pages/BlogPage.js"></script>
+    <script type="text/babel" src="components/seminar/SeminarFormSteps.js"></script>
+    <script type="text/babel" src="components/seminar/PaymentModal.js"></script>
+    <script type="text/babel" src="components/seminar/FormNavigation.js"></script>
+    <script type="text/babel" src="components/payment/FlutterwavePayment.js"></script>
+    <script type="text/babel" src="components/admin/Dashboard.js"></script>
+    <script type="text/babel" src="pages/MembershipPage.js"></script>
+    <script type="text/babel" src="pages/AdminPage.js"></script>
+</body>
+</html>
