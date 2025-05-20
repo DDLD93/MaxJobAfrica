@@ -144,7 +144,7 @@ function Navbar() {
                 </div>
               ) : (
                 <button
-                  onClick={() => handleNavigation('/membership')}
+                  onClick={() => handleNavigation('https://app.maxjob.africa')}
                   className="btn btn-primary ml-4"
                   data-name="membership-button"
                 >
