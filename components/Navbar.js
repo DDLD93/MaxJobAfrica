@@ -144,11 +144,11 @@ function Navbar() {
                 </div>
               ) : (
                 <button
-                  onClick={() => handleNavigation('https://app.maxjob.africa')}
+                  onClick={() => window.location.href = 'https://app.maxjob.africa'}
                   className="btn btn-primary ml-4"
                   data-name="membership-button"
                 >
-                  Be a Member
+                  Go to Member Area
                 </button>
               )}
             </div>
